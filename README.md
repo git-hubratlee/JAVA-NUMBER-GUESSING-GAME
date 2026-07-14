@@ -1,10 +1,13 @@
-# Java-HiLo-Engine
-A high-performance console engine written in Java that executes a dual-stage state machine for a number-guessing simulation, utilizing low-level infinite loop constructs, pseudo-random seed generation, and structured runtime termination paths.
+# Java Number Guesser
 
-# Java-HiLo-Engine
+A simple, console-based number guessing game built in Java. The program picks a random number between 1 and 100, and the player guesses until they hit the right number. 
 
-An optimized, command-line state machine implementing a real-time number evaluation engine in Java. This project serves as a foundational demonstration of low-level control flow structures, conditional decision trees, and interactive runtime loop management.
+## How It Works
+* **Random Target:** Uses java.util.Random to generate a secret number between 1 and 100.
+* **Higher/Lower Hints:** Tells the player if their guess is too high or too low after every turn.
+* **Play Again Loop:** Uses nested for (;;) loops so the player can restart the game or exit cleanly without closing the console window.
 
-## 🧠 Architectural Overview & Control Flow
-Unlike standard implementations, this architecture avoids unnecessary boolean flag variables. Instead, it relies on low-level, infinite `for (;;)` loop constructs to optimize execution pathing.
-
+## Tech Stack and Concepts
+* **Language:** Java
+* **Infinite Control Loops:** Built using for (;;) structures to manage the game state and replay options.
+* **Core APIs:** Scanner (for reading player input) and Random (for generating the secret number).
